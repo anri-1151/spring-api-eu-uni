@@ -18,6 +18,7 @@ public class Address {
     @Column(name = "district")
     private String district;
 
+
     public Long getId() {
         return id;
     }

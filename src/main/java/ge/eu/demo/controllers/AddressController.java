@@ -33,7 +33,7 @@ public class AddressController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST, produces = {"application/json"})
-    public Address add(@RequestBody AddAddress addAddress) throws Exception {
+    public Address add(@RequestBody AddAddress addAddress)  {
         return addressService.addAddress(addAddress);
     }
 }

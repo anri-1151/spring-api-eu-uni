@@ -32,10 +32,10 @@ public class AddressService {
     }
 
     @Transactional
-    public Address addAddress(AddAddress addData) throws Exception {
+    public Address addAddress(AddAddress addData) {
         Address added = addressRepository.findOneByDistrictAndAddress(addData.getDistrict(), addData.getAddress());
         if (added != null) {
-           throw new Exception("already_added");
+           return added;
         }
 
         Address address = new Address();

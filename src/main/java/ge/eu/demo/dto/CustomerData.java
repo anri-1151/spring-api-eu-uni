@@ -1,14 +1,26 @@
 package ge.eu.demo.dto;
 
-public class AddAddress {
+public class CustomerData {
 
+    private String firstName;
+    private String lastName;
     private String address;
     private String district;
 
-    public AddAddress() {}
-    public AddAddress(String address, String district) {
-        this.address = address;
-        this.district = district;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getAddress() {
